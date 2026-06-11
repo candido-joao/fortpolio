@@ -494,6 +494,102 @@
           </div>
         </div>
 
+        <div class="exp-card">
+          <button type="button" class="exp-header" aria-expanded="false">
+            <div class="exp-header-main">
+              <div class="exp-title-row">
+                <span class="exp-name">Sistema de Gestão Operacional de Campo</span>
+                <span class="exp-badge">API REST + App Mobile</span>
+              </div>
+              <div class="exp-pills">
+                <span class="pill">Java 17</span>
+                <span class="pill">TypeScript 5.9</span>
+                <span class="pill">Spring Boot 3.4</span>
+                <span class="pill">React Native 0.81</span>
+                <span class="pill">Oracle</span>
+                <span class="pill">SQLite</span>
+                <span class="pill">Spring AI</span>
+                <span class="pill">Expo 54</span>
+              </div>
+            </div>
+            <span class="exp-chevron" aria-hidden="true">▸</span>
+          </button>
+          <div class="exp-body">
+            <div class="exp-body-inner">
+              <p class="exp-desc">Plataforma fullstack composta por API REST em Spring Boot integrada a ERP externo e aplicativo mobile React Native com suporte offline. O sistema centraliza fluxos de inspeção, manutenção, aprovação de documentos, checklists e registros operacionais de campo. O app mobile sincroniza dados localmente via banco SQLite e os consolida com o servidor ao restabelecer conectividade.</p>
+              <div class="exp-highlights">
+                <h4>Destaques técnicos</h4>
+                <ul>
+                  <li>Integração com ERP externo via camada DAO dedicada (<code>dao/sankhya</code>), isolando o domínio da aplicação das particularidades do sistema legado de terceiros</li>
+                  <li>Estratégia offline-first no app mobile com WatermelonDB (SQLite): modelos locais com 37+ tabelas, migrações de schema versionadas e serviço de sync bundle para reconciliação com a API quando há conectividade</li>
+                  <li><code>RoutingChatModel</code> customizado sobre Spring AI para rotear chamadas entre múltiplos provedores de LLM (Anthropic, OpenAI, Gemini) com rastreamento de custo de tokens via <code>IaCostService</code></li>
+                  <li>Pipeline de processamento de anexos com IA: <code>AiAttachConverterService</code> converte documentos (imagens, PDFs) para análise multimodal, integrando OCR nativo (ML Kit) no mobile com análise por LLM no backend</li>
+                  <li>Geração de relatórios server-side combinando JasperReports (PDF) e Apache POI (XLSX) a partir das mesmas fontes de dados, servidos via endpoints REST autenticados por JWT</li>
+                  <li>Múltiplos perfis de configuração (prod, test, treina) com propriedades isoladas por ambiente, permitindo deploy em ambientes paralelos sem alteração de código</li>
+                </ul>
+              </div>
+              <div class="exp-tech-groups">
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">linguagens</span>
+                  <div class="exp-pills">
+                    <span class="pill">Java 17</span>
+                    <span class="pill">TypeScript 5.9</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">frameworks</span>
+                  <div class="exp-pills">
+                    <span class="pill">Spring Boot 3.4</span>
+                    <span class="pill">Spring Security</span>
+                    <span class="pill">Spring Data JPA</span>
+                    <span class="pill">Spring AI 1.1</span>
+                    <span class="pill">React Native 0.81</span>
+                    <span class="pill">Expo 54</span>
+                    <span class="pill">Redux 5 + Immer</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">banco de dados</span>
+                  <div class="exp-pills">
+                    <span class="pill">Oracle (Hibernate 6 / JPA)</span>
+                    <span class="pill">SQLite (WatermelonDB 0.27)</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">infraestrutura</span>
+                  <div class="exp-pills">
+                    <span class="pill">JWT (jjwt)</span>
+                    <span class="pill">HTTPS / TLS</span>
+                    <span class="pill">Codemagic CI/CD</span>
+                    <span class="pill">EAS Build</span>
+                    <span class="pill">Micrometer + Prometheus</span>
+                    <span class="pill">Sentry</span>
+                    <span class="pill">OneSignal</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">bibliotecas</span>
+                  <div class="exp-pills">
+                    <span class="pill">Spring AI (multi-provider: Anthropic, OpenAI, Gemini)</span>
+                    <span class="pill">JasperReports</span>
+                    <span class="pill">Apache POI</span>
+                    <span class="pill">iCal4j</span>
+                    <span class="pill">ML Kit OCR</span>
+                    <span class="pill">Vision Camera 4</span>
+                    <span class="pill">MapStruct 1.6</span>
+                    <span class="pill">SpringDoc OpenAPI 2.8</span>
+                    <span class="pill">Lombok</span>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-arch">
+                <span class="exp-tech-label">arquitetura</span>
+                <p>Layered Architecture (Controller → Service → DAO → Model) no backend; Offline-First com sync bundle no mobile. Facade pattern para agregação de dados de ERP externo. RoutingChatModel para abstração e roteamento entre múltiplos providers de LLM.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
