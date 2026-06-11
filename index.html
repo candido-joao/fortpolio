@@ -34,6 +34,7 @@
     <ul class="nav-links">
       <li><a href="#stack">stack</a></li>
       <li><a href="#projetos">projetos</a></li>
+      <li><a href="#experiencia">experiência</a></li>
       <li><a href="#sobre">sobre</a></li>
     </ul>
     <div class="nav-right">
@@ -99,6 +100,400 @@
           <h3 class="card-name">mais no github →</h3>
           <p class="card-desc">Outros projetos, experimentos e estudos no meu perfil.</p>
         </a>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section">
+      <h2 class="section-label">// experiência</h2>
+      <p class="exp-nda-note">projetos selecionados sob NDA</p>
+      <div class="exp-list">
+
+        <div class="exp-card">
+          <button type="button" class="exp-header" aria-expanded="false">
+            <div class="exp-header-main">
+              <div class="exp-title-row">
+                <span class="exp-name">Plataforma de Gestão de Projetos e Equipes</span>
+                <span class="exp-badge">SPA + API REST</span>
+              </div>
+              <div class="exp-pills">
+                <span class="pill">TypeScript</span>
+                <span class="pill">Python 3.12</span>
+                <span class="pill">React 18</span>
+                <span class="pill">Django 6</span>
+                <span class="pill">PostgreSQL</span>
+                <span class="pill">Redis</span>
+                <span class="pill">Docker</span>
+                <span class="pill">Celery</span>
+              </div>
+            </div>
+            <span class="exp-chevron" aria-hidden="true">▸</span>
+          </button>
+          <div class="exp-body">
+            <div class="exp-body-inner">
+              <p class="exp-desc">Sistema corporativo para gestão de projetos, atividades e alocação de recursos humanos, com módulos integrados de controle de horas, planejamento ágil e inventário. Fornece dashboards analíticos, visualizações em Kanban e Gantt, além de relatórios exportáveis. Suporta comunicação assíncrona via WebSocket e processamento de tarefas em background.</p>
+              <div class="exp-highlights">
+                <h4>Destaques técnicos</h4>
+                <ul>
+                  <li>Migração progressiva do frontend para arquitetura moderna sem big-bang rewrite: camada <code>refactor/</code> com Tailwind v4, TanStack Query v5, Radix UI e padrão view-model convive com código legado em MUI/Axios/Redux, permitindo evolução incremental sem paralisar entregas</li>
+                  <li>Backend com Dependency Injection via <code>dependency-injector</code>: serviços resolvidos por container, desacoplando camada de negócio dos ViewSets do DRF e facilitando testes unitários com mocks por substituição de binding</li>
+                  <li>Stack assíncrona dupla: Celery + Redis para tarefas de longa duração (geração de PDFs com WeasyPrint, exportações com Pandas/OpenPyXL) e Django Channels para comunicação em tempo real, ambos containerizados e monitorados via Flower</li>
+                  <li>Pipeline CI/CD com builds multi-stage Docker (Node 22 → Caddy para frontend; Python 3.12 → slim runtime para backend), reduzindo tamanho de imagem e separando artefatos de build de artefatos de runtime</li>
+                  <li>Integração de IA generativa (Gemini) como módulo plugável, isolado do core de negócio, com abstração de serviço que permite troca de provider sem impacto nos chamadores</li>
+                </ul>
+              </div>
+              <div class="exp-tech-groups">
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">linguagens</span>
+                  <div class="exp-pills">
+                    <span class="pill">TypeScript</span>
+                    <span class="pill">Python 3.12</span>
+                    <span class="pill">SQL</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">frameworks</span>
+                  <div class="exp-pills">
+                    <span class="pill">React 18</span>
+                    <span class="pill">Vite 5</span>
+                    <span class="pill">Django 6</span>
+                    <span class="pill">Django REST Framework 3.17</span>
+                    <span class="pill">Celery 5</span>
+                    <span class="pill">Django Channels 4</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">banco de dados</span>
+                  <div class="exp-pills">
+                    <span class="pill">PostgreSQL 17</span>
+                    <span class="pill">Redis</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">infraestrutura</span>
+                  <div class="exp-pills">
+                    <span class="pill">Docker</span>
+                    <span class="pill">Docker Compose</span>
+                    <span class="pill">Traefik</span>
+                    <span class="pill">Caddy</span>
+                    <span class="pill">Gunicorn</span>
+                    <span class="pill">AWS S3</span>
+                    <span class="pill">GitHub Actions</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">bibliotecas</span>
+                  <div class="exp-pills">
+                    <span class="pill">TanStack Query v5</span>
+                    <span class="pill">Redux Toolkit</span>
+                    <span class="pill">Zustand</span>
+                    <span class="pill">Tailwind CSS v4</span>
+                    <span class="pill">Material UI v5</span>
+                    <span class="pill">Radix UI</span>
+                    <span class="pill">React Hook Form + Zod</span>
+                    <span class="pill">SimpleJWT</span>
+                    <span class="pill">WeasyPrint</span>
+                    <span class="pill">Pandas / NumPy / OpenPyXL</span>
+                    <span class="pill">Google Generative AI (Gemini)</span>
+                    <span class="pill">Pytest + Factory Boy</span>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-arch">
+                <span class="exp-tech-label">arquitetura</span>
+                <p>Monolito modular no backend (11 Django apps desacoplados) + SPA com camada de refatoração progressiva no frontend; Service Layer e Repository Pattern no backend; Feature-based structure com hooks de view-model no frontend</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <button type="button" class="exp-header" aria-expanded="false">
+            <div class="exp-header-main">
+              <div class="exp-title-row">
+                <span class="exp-name">InvarIX Platform</span>
+                <span class="exp-badge">SaaS Full-Stack</span>
+              </div>
+              <div class="exp-pills">
+                <span class="pill">Python 3.14</span>
+                <span class="pill">TypeScript 5.9</span>
+                <span class="pill">FastAPI</span>
+                <span class="pill">React 19</span>
+                <span class="pill">PostgreSQL 17</span>
+                <span class="pill">Redis 7</span>
+                <span class="pill">RabbitMQ</span>
+                <span class="pill">Stripe</span>
+              </div>
+            </div>
+            <span class="exp-chevron" aria-hidden="true">▸</span>
+          </button>
+          <div class="exp-body">
+            <div class="exp-body-inner">
+              <p class="exp-desc">Plataforma SaaS multi-tenant com autenticação completa, autorização baseada em grupos e permissões, gestão de projetos e equipes, e integração de cobrança por assinatura. O backend expõe uma API REST assíncrona consumida por um frontend React com roteamento baseado em arquivos, gerenciamento de estado de servidor e suporte a múltiplos idiomas. Suporta comunicação em tempo real via WebSocket e processamento de tarefas assíncronas via fila de mensagens.</p>
+              <div class="exp-highlights">
+                <h4>Destaques técnicos</h4>
+                <ul>
+                  <li>Adoção de Ports &amp; Adapters por módulo: cada adaptador concreto (Redis, SQL, Stripe, aiosmtplib) implementa uma interface abstrata (Port), permitindo substituição e teste com fakes sem alterar lógica de negócio</li>
+                  <li>Pipeline assíncrono de e-mail via RabbitMQ + FastStream: requests HTTP não bloqueiam no envio de e-mail — a tarefa é publicada na fila e consumida por um worker separado (<code>start-stream</code>), desacoplando latência de SMTP do ciclo request/response</li>
+                  <li>Token refresh transparente no frontend: o cliente Ky intercepta respostas 401, executa refresh de token e re-envia a request original automaticamente, com deduplicação para evitar múltiplas chamadas simultâneas de refresh</li>
+                  <li>Tipagem end-to-end: o schema OpenAPI gerado pelo FastAPI é convertido em tipos TypeScript via <code>openapi-typescript</code>, eliminando drift entre contratos de API e consumo no frontend</li>
+                  <li>Observabilidade completa em desenvolvimento: stack local com OpenTelemetry (traces), Prometheus (métricas), Loki (logs) e Tempo, todos coletados pelo Grafana Alloy e visualizados no Grafana</li>
+                  <li>Multi-tenancy com isolamento por políticas de permissão: acesso a recursos é validado por Policy classes no nível de serviço, combinando <code>tenant_id</code> + grupo/permissão do usuário antes de qualquer operação</li>
+                  <li>Build multi-stage com imagem mínima de produção: Dockerfile em 4 estágios (base → builder → migrations → runtime) gera imagem final sem ferramentas de build, rodando como usuário não-root (uid 1001)</li>
+                </ul>
+              </div>
+              <div class="exp-tech-groups">
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">linguagens</span>
+                  <div class="exp-pills">
+                    <span class="pill">Python 3.14</span>
+                    <span class="pill">TypeScript 5.9</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">frameworks</span>
+                  <div class="exp-pills">
+                    <span class="pill">FastAPI</span>
+                    <span class="pill">SQLAlchemy (async)</span>
+                    <span class="pill">FastStream</span>
+                    <span class="pill">React 19</span>
+                    <span class="pill">TanStack Router v1</span>
+                    <span class="pill">TanStack Query v5</span>
+                    <span class="pill">React Hook Form</span>
+                    <span class="pill">Zod</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">banco de dados</span>
+                  <div class="exp-pills">
+                    <span class="pill">PostgreSQL 17</span>
+                    <span class="pill">Redis 7</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">infraestrutura</span>
+                  <div class="exp-pills">
+                    <span class="pill">Docker (multi-stage)</span>
+                    <span class="pill">Docker Compose</span>
+                    <span class="pill">Traefik</span>
+                    <span class="pill">RabbitMQ</span>
+                    <span class="pill">MinIO</span>
+                    <span class="pill">GitHub Actions</span>
+                    <span class="pill">Cloudflare Pages</span>
+                    <span class="pill">Gunicorn + Uvicorn</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">bibliotecas</span>
+                  <div class="exp-pills">
+                    <span class="pill">Stripe SDK</span>
+                    <span class="pill">Socket.IO</span>
+                    <span class="pill">OpenTelemetry</span>
+                    <span class="pill">Prometheus + Grafana + Loki + Tempo</span>
+                    <span class="pill">Alembic</span>
+                    <span class="pill">Tailwind CSS v4</span>
+                    <span class="pill">shadcn/ui + Radix UI</span>
+                    <span class="pill">Zustand</span>
+                    <span class="pill">openapi-typescript</span>
+                    <span class="pill">Pytest + testcontainers</span>
+                    <span class="pill">Vite 7</span>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-arch">
+                <span class="exp-tech-label">arquitetura</span>
+                <p>Clean Architecture com padrão Ports &amp; Adapters (Hexagonal) no backend, organizada em módulos core (authn, authz, billing, tenants) e features (projects, teams). Cada módulo segue a hierarquia: Routes → Services → Ports (interfaces abstratas) → Adapters (implementações concretas). Frontend com Feature-Based Structure e separação entre server state (TanStack Query), client state (Zustand) e form state (React Hook Form).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <button type="button" class="exp-header" aria-expanded="false">
+            <div class="exp-header-main">
+              <div class="exp-title-row">
+                <span class="exp-name">Portal de Monitoramento Logístico em Tempo Real</span>
+                <span class="exp-badge">Dashboard Operacional</span>
+              </div>
+              <div class="exp-pills">
+                <span class="pill">TypeScript 5.8</span>
+                <span class="pill">React 19</span>
+                <span class="pill">Supabase</span>
+                <span class="pill">PostgreSQL 15</span>
+                <span class="pill">Tailwind CSS v4</span>
+                <span class="pill">Docker</span>
+                <span class="pill">Playwright</span>
+              </div>
+            </div>
+            <span class="exp-chevron" aria-hidden="true">▸</span>
+          </button>
+          <div class="exp-body">
+            <div class="exp-body-inner">
+              <p class="exp-desc">Plataforma web para acompanhamento em tempo real do ciclo de vida de registros logísticos, com visualização em modo Kanban e lista. Suporta colaboração multi-usuário com atualizações reativas via WebSocket, rastreamento geográfico com mapas interativos e gestão de etapas com histórico persistido em banco de dados relacional. Inclui sistema de filtros avançados, alertas automáticos e painel financeiro agregado.</p>
+              <div class="exp-highlights">
+                <h4>Destaques técnicos</h4>
+                <ul>
+                  <li>Real-time sem polling: painel de monitoramento atualiza via <code>pg_notify</code> (signal table + Supabase Realtime channel), eliminando long-polling e reduzindo carga no banco</li>
+                  <li>Materialized views como camada de leitura: dados agregados de 6+ matviews e 15+ views SQL absorvem complexidade de joins e cálculos no banco, mantendo o cliente React simples e tipado via geração automática de tipos (<code>supabase gen types</code>)</li>
+                  <li>Pipeline CI/CD completo com 12 workflows GitHub Actions: lint, typecheck, format em PRs; deploy separado para dev e prod; deploy autônomo de Edge Functions; build Docker com migrations atômicas em transação única para rollback seguro</li>
+                  <li>Permissões temporárias via store dedicado: modelo de concessão de edição granular por registro, sem alterar RLS do banco, gerenciado em estado efêmero no cliente</li>
+                  <li>Ambiente validado em runtime com Zod: variáveis de ambiente parseadas e tipadas no boot, lançando erro explícito em vez de falhar silenciosamente em produção</li>
+                </ul>
+              </div>
+              <div class="exp-tech-groups">
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">linguagens</span>
+                  <div class="exp-pills">
+                    <span class="pill">TypeScript 5.8</span>
+                    <span class="pill">SQL (PostgreSQL)</span>
+                    <span class="pill">JavaScript (Deno)</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">frameworks</span>
+                  <div class="exp-pills">
+                    <span class="pill">React 19</span>
+                    <span class="pill">React Router v6</span>
+                    <span class="pill">Vite 5 (SWC)</span>
+                    <span class="pill">TanStack React Query v5</span>
+                    <span class="pill">Zustand 5</span>
+                    <span class="pill">React Hook Form</span>
+                    <span class="pill">Zod</span>
+                    <span class="pill">Tailwind CSS v4</span>
+                    <span class="pill">shadcn/ui (Radix UI)</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">banco de dados</span>
+                  <div class="exp-pills">
+                    <span class="pill">Supabase (PostgreSQL 15)</span>
+                    <span class="pill">Materialized Views</span>
+                    <span class="pill">pg_notify / LISTEN-NOTIFY</span>
+                    <span class="pill">Row-Level Security (RLS)</span>
+                    <span class="pill">Supabase Auth</span>
+                    <span class="pill">Supabase Realtime</span>
+                    <span class="pill">Supabase Edge Functions (Deno)</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">infraestrutura</span>
+                  <div class="exp-pills">
+                    <span class="pill">Docker (multi-stage)</span>
+                    <span class="pill">Docker Compose</span>
+                    <span class="pill">GitHub Actions (12 workflows)</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">bibliotecas</span>
+                  <div class="exp-pills">
+                    <span class="pill">dnd-kit</span>
+                    <span class="pill">Recharts</span>
+                    <span class="pill">Leaflet + react-leaflet</span>
+                    <span class="pill">Vitest 3</span>
+                    <span class="pill">Testing Library</span>
+                    <span class="pill">Playwright</span>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-arch">
+                <span class="exp-tech-label">arquitetura</span>
+                <p>Layered SPA — separação explícita em pages / components / hooks / services / store / lib, com service layer isolando acesso ao banco, custom hooks encapsulando queries+mutations via TanStack Query, e estado global particionado em 4 stores Zustand independentes (auth, ui, filters, permissions)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <button type="button" class="exp-header" aria-expanded="false">
+            <div class="exp-header-main">
+              <div class="exp-title-row">
+                <span class="exp-name">Sistema de Gestão Jurídica e Financeira</span>
+                <span class="exp-badge">ERP Web Full-Stack</span>
+              </div>
+              <div class="exp-pills">
+                <span class="pill">Java 21</span>
+                <span class="pill">TypeScript 5.8</span>
+                <span class="pill">Spring Boot</span>
+                <span class="pill">React 18</span>
+                <span class="pill">PostgreSQL 15</span>
+                <span class="pill">Oracle Cloud</span>
+              </div>
+            </div>
+            <span class="exp-chevron" aria-hidden="true">▸</span>
+          </button>
+          <div class="exp-body">
+            <div class="exp-body-inner">
+              <p class="exp-desc">Plataforma integrada de gestão que centraliza o acompanhamento de processos, controle financeiro, cadastro de pessoas e geração de relatórios. Oferece dashboards analíticos em tempo real, módulo de fila de atendimento e exportação de dados para Excel. Suporta fluxos administrativos e judiciais com rastreabilidade completa de movimentações e pendências.</p>
+              <div class="exp-highlights">
+                <h4>Destaques técnicos</h4>
+                <ul>
+                  <li>Build unificado: Maven orquestra <code>npm install</code> + <code>npm run build</code> (Vite) e empacota o bundle React estático diretamente no WAR do Spring Boot — único artefato para deploy, sem necessidade de servidor web separado</li>
+                  <li>Camada de serviços baseada em interfaces Java, permitindo inversão de dependência e facilitando substituição de implementações sem impacto nos controllers</li>
+                  <li>HikariCP com pool explicitamente tunado (min-idle=5, max-pool=20, leak-detection=15s) para suportar carga concorrente com controle fino de recursos de conexão</li>
+                  <li>Queries JPQL com normalização de acentuação via TRANSLATE para suportar busca textual tolerante a variações de grafia em português</li>
+                  <li>Integração com Oracle Cloud Infrastructure para armazenamento de arquivos, abstraída em configuração injetável via Spring IoC</li>
+                  <li>Segurança em camadas: CorsFilter → AuthTokenFilter (JWT stateless) → Spring Security RBAC com roles e perfis de acesso por feature</li>
+                </ul>
+              </div>
+              <div class="exp-tech-groups">
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">linguagens</span>
+                  <div class="exp-pills">
+                    <span class="pill">Java 21</span>
+                    <span class="pill">TypeScript 5.8</span>
+                    <span class="pill">SQL</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">frameworks</span>
+                  <div class="exp-pills">
+                    <span class="pill">Spring Boot 2.5.4</span>
+                    <span class="pill">Spring Data JPA</span>
+                    <span class="pill">Spring Security</span>
+                    <span class="pill">React 18.3</span>
+                    <span class="pill">Redux Toolkit 2.6</span>
+                    <span class="pill">Material-UI v5</span>
+                    <span class="pill">Formik + Yup</span>
+                    <span class="pill">React Router DOM 7</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">banco de dados</span>
+                  <div class="exp-pills">
+                    <span class="pill">PostgreSQL 15</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">infraestrutura</span>
+                  <div class="exp-pills">
+                    <span class="pill">Oracle Cloud Infrastructure</span>
+                    <span class="pill">HikariCP</span>
+                    <span class="pill">Maven WAR deploy</span>
+                    <span class="pill">GitHub Packages</span>
+                  </div>
+                </div>
+                <div class="exp-tech-group">
+                  <span class="exp-tech-label">bibliotecas</span>
+                  <div class="exp-pills">
+                    <span class="pill">Apache POI 5.2</span>
+                    <span class="pill">Apache Tika 2.0</span>
+                    <span class="pill">JJWT 0.11.5</span>
+                    <span class="pill">Vite 7</span>
+                    <span class="pill">Chart.js + ApexCharts</span>
+                    <span class="pill">FullCalendar</span>
+                    <span class="pill">i18next</span>
+                    <span class="pill">Axios</span>
+                    <span class="pill">Lombok</span>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-arch">
+                <span class="exp-tech-label">arquitetura</span>
+                <p>Layered Architecture (Controller → Service Interface → Repository → JPA Entity). Monorepo Maven com frontend React/Vite empacotado como WAR dentro do módulo backend via exec-maven-plugin. Frontend consome API REST via Axios com injeção automática de JWT nos headers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
