@@ -31,3 +31,13 @@ links.querySelectorAll("a").forEach((link) => {
     toggle.setAttribute("aria-expanded", "false");
   });
 });
+
+document.querySelectorAll(".exp-header").forEach((btn) => {
+  const card = btn.closest(".exp-card");
+  const body = card.querySelector(".exp-body");
+  btn.addEventListener("click", () => {
+    const open = card.classList.toggle("exp-card--open");
+    btn.setAttribute("aria-expanded", open);
+    body.style.maxHeight = open ? body.scrollHeight + "px" : "0";
+  });
+});
