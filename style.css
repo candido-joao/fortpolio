@@ -301,6 +301,14 @@ main {
   border-radius: 50%;
 }
 
+.lang-dot--java {
+  background: #b07219;
+}
+
+.lang-dot--kotlin {
+  background: #A97BFF;
+}
+
 /* ---------- sobre ---------- */
 
 .about {
